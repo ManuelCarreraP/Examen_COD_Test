@@ -34,8 +34,8 @@ public class TestMain {
             "00000021, K, true",
             "00000022, E, true",
             "00000000, X, false",  // Letra incorrecta
-            "12345678, Z, false",  // Letra errónea
-            "98765432, M, false"   // Letra errónea
+            "12345678, M, false",  // Letra errónea
+            "98765432, Z, false"   // Letra errónea
     })
     public void testComprobarDNI(String dni, String letra, boolean esperado) {
         boolean resultado = Main.comprobarDNI(dni, letra.charAt(0));
